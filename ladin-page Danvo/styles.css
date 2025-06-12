@@ -1,0 +1,191 @@
+/* Aplica a todos los elementos de la página */
+* {
+    margin: 0; /* Elimina el margen exterior predeterminado */
+    padding: 0; /* Elimina el relleno interno predeterminado */
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho/alto total del elemento */
+  }
+  
+  /* Estilos generales para el cuerpo de la página */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define una fuente moderna y legible */
+    background-color: #f5fbff; /* Fondo azul muy claro */
+    color: #333; /* Color del texto principal: gris oscuro */
+  }
+  
+  /* Contenedor del encabezado */
+  header {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 2rem 4rem; /* Espaciado interno: 2rem arriba/abajo, 4rem izquierda/derecha */
+    overflow: hidden; /* Evita que elementos flotantes se desborden */
+    font-weight: bold;
+  }
+  
+  /* Contenedor del logo dentro del header */
+  .logo {
+    float: left; /* Alinea el logo a la izquierda */
+    font-size: 1rem; /* Tamaño del texto del logo */
+    color: #000000; /* Color negro para el texto */
+  }
+  
+  /* Imagen del logo */
+  .logo img {
+    height: 28px; /* Altura fija para el logo */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+  }
+  
+  /* Contenedor del menú de navegación */
+  .nav {
+    float: right; /* Alinea el menú de navegación a la derecha */
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .nav a {
+    margin-right: 2rem; /* Espacio entre enlaces */
+    text-decoration: none; /* Quita el subrayado */
+    color: #555; /* Color gris suave para los enlaces */
+    font-size: 0.95rem; /* Tamaño de fuente levemente más pequeño */
+  }
+  
+  /* Botón de registro ("Sign up") */
+  .sign-up {
+    background-color: #3ba9ff; /* Fondo azul brillante */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 0.6rem 1.2rem; /* Espaciado interno del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
+  }
+  
+  /* Título principal en la sección "principal" */
+  .principal-texto h1 {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    color: #222; /* Color gris muy oscuro */
+    margin-bottom: 1.5rem; /* Espacio debajo del título */
+  }
+  
+  /* Párrafo debajo del título en la sección "Hero" */
+  .principal-text0 p {
+    font-size: 1rem; /* Tamaño de texto estándar */
+    color: #666; /* Color gris claro */
+    margin-bottom: 2rem; /* Espacio debajo del párrafo */
+    max-width: 90%; /* Limita el ancho máximo del párrafo */
+  }
+  
+  /* Botón de llamada a la acción ("Get Started") */
+  .get-started {
+    background-color: #3ba9ff; /* Fondo azul brillante */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 0.8rem 1.5rem; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+    cursor: pointer; /* Muestra una mano al pasar el mouse */
+  }
+  
+  /* Imagen principal de la sección Hero */
+  .principal-imagen img {
+    max-width: 90%; /* Escala la imagen sin exceder el 90% del contenedor */
+    width: 400px; /* Tamaño fijo como máximo */
+  }
+  
+  /* Contenedor general de la sección Hero */
+  .principal {
+    position: relative; /* Permite posicionar elementos hijos con position: absolute */
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 4rem 6rem; /* Espaciado interno amplio */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+  }
+  
+  /* Contenedor del texto dentro del Hero */
+  .principal-texto {
+    width: 50%; /* Ocupa la mitad izquierda */
+    float: left; /* Alinea a la izquierda */
+    position: relative; /* Para que su contenido pueda superponerse */
+    z-index: 1; /* Asegura que el texto quede por encima de otros elementos como la forma decorativa */
+  }
+  
+  /* Contenedor de la imagen principal */
+  .principal-imagen {
+    width: 50%; /* Ocupa la mitad derecha */
+    float: left; /* Alineado a la izquierda (junto a la otra mitad) */
+    text-align: center; /* Centra la imagen horizontalmente */
+    position: relative; /* Permite ubicar elementos absolutos dentro */
+    z-index: 3; /* Asegura que la persona esté por delante de decoraciones */
+  }
+  
+  /* Contenedor de la forma decorativa (Shape) */
+  .principal-shape {
+    width: 30rem; /* Ancho fijo inicial */
+    max-width: 21%; /* No excede la mitad del contenedor */
+    height: auto; /* Altura automática basada en proporciones */
+    position: absolute; /* Posición absoluta respecto al contenedor padre */
+    top: 25%; /* Distancia desde la parte superior del padre */
+    left: 71%; /* Posicionamiento desde la izquierda */
+    transform: translate(-50%, -60%); /* Centra el elemento visualmente */
+    z-index: 0; /* Se coloca en el fondo */
+    opacity: 0.4; /* Semi-transparente */
+  }
+  
+  /* Imagen dentro de la forma decorativa */
+  .principal-shape img {
+    position: absolute; /* Posición absoluta dentro del contenedor .shape */
+    max-width: 80%; /* Escala sin exceder el 80% del contenedor */
+    width: 400px; /* Ancho fijo */
+    top: 30px; /* Separación desde la parte superior */
+    right: 10px; /* Separación desde la parte derecha */
+  }
+  
+
+ /* Se aplica si el ancho de la pantalla es menor o igual a 480px */
+  @media(max-width: 480px) {
+  header {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+
+  .logo, .nav {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .principal {
+    padding: 2rem;
+  }
+
+  .principal-texto,
+  .principal-imagen {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .principal-texto h1 {
+    font-size: 1.8rem;
+  }
+
+  .principal-texto p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .get-started {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .principal-imagen img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .principal-shape {
+    display: none; /* Oculta la forma decorativa en pantallas pequeñas */
+  }
+}
