@@ -80,6 +80,8 @@
     border-radius: 10px; /* Bordes redondeados */
     font-size: 1rem; /* Tamaño del texto */
     cursor: pointer; /* Muestra una mano al pasar el mouse */
+    margin-top: -px;
+
   }
   
   /* Imagen principal de la sección Hero */
@@ -125,6 +127,7 @@
     z-index: 0; /* Se coloca en el fondo */
     opacity: 0.4; /* Semi-transparente */
   }
+
   
   /* Imagen dentro de la forma decorativa */
   .principal-shape img {
@@ -178,11 +181,15 @@
   .get-started {
     padding: 0.6rem 1.2rem;
     font-size: 0.95rem;
+
+    margin-left: 100px;
   }
 
   .principal-imagen img {
+    
     width: 100%;
     max-width: 100%;
+    
   }
 
   .principal-shape {
