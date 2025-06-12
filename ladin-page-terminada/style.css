@@ -1,0 +1,334 @@
+
+body {
+  font-family: sans-serif; /* Fuente sin serifas para un diseño moderno y limpio */
+  margin: 0;               /* Elimina los márgenes predeterminados del navegador */
+  padding: 0;              /* Elimina el espacio interior predeterminado */
+  background: #ffffff;     /* Fondo blanco para mayor claridad */
+  color: #333;             /* Color de texto gris oscuro para buena legibilidad */
+}
+
+/* ---------- ENCABEZADO ---------- */
+
+header {
+  background-color: #fddde6; /* Fondo rosado claro, visualmente atractivo */
+  text-align: center;        /* Centra el contenido horizontalmente */
+  padding: 20px;             /* Espacio interior alrededor del contenido */
+}
+
+
+.nav a{
+  margin: 90px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+/* ---------- SECCIONES ---------- */
+
+section {
+  padding: 20px;       /* Espaciado interior para separar del borde */
+  text-align: center;  /* Centra el contenido */
+}
+
+/* ---------- TÍTULOS ---------- */
+
+h2 {
+  text-align: center;     /* Centra el título */
+  margin-bottom: 20px;    /* Espacio inferior para separar del contenido siguiente */
+}
+
+h3 {
+  text-align: center;     /* Centra los subtítulos */
+}
+
+/* ---------- PRODUCTOS ---------- */
+/* Cada producto tiene su propia clase (producto1, producto2, etc.) con estilos similares. */
+
+/* Estilo base para todos los productos */
+.producto1{
+  margin-bottom: 20px;        /* Espacio debajo de cada producto */
+  background: #f3f3f3;         /* Fondo gris claro para destacar el contenido */
+  padding: 15px;               /* Espacio interno */
+  border-radius: 8px;          /* Bordes redondeados */
+  text-align: center;          /* Centrado de contenido */
+  display: inline-block;       /* Se muestra en línea, pero como bloque */
+  vertical-align: top;         /* Alineación vertical superior */
+  width: 45%;                  /* Ancho del producto (dos por fila) */
+  margin: 2%;                  /* Margen alrededor para separación */
+  box-sizing: border-box;      /* Incluye el padding y border en el cálculo del ancho */
+
+} .producto2{
+  margin-bottom: 20px;        /* Espacio debajo de cada producto */
+  background: #f3f3f3;         /* Fondo gris claro para destacar el contenido */
+  padding: 15px;               /* Espacio interno */
+  border-radius: 8px;          /* Bordes redondeados */
+  text-align: center;          /* Centrado de contenido */
+  display: inline-block;       /* Se muestra en línea, pero como bloque */
+  vertical-align: top;         /* Alineación vertical superior */
+  width: 45%;                  /* Ancho del producto (dos por fila) */
+  margin: 2%;                  /* Margen alrededor para separación */
+  box-sizing: border-box;      /* Incluye el padding y border en el cálculo del ancho */
+} .producto3{
+  margin-bottom: 20px;        /* Espacio debajo de cada producto */
+  background: #f3f3f3;         /* Fondo gris claro para destacar el contenido */
+
+  padding: 15px;               /* Espacio interno */
+  border-radius: 8px;          /* Bordes redondeados */
+  text-align: center;          /* Centrado de contenido */
+  display: inline-block;       /* Se muestra en línea, pero como bloque */
+  vertical-align: top;         /* Alineación vertical superior */
+  width: 45%;                  /* Ancho del producto (dos por fila) */
+  margin: 2%;                  /* Margen alrededor para separación */
+  box-sizing: border-box;      /* Incluye el padding y border en el cálculo del ancho */
+
+} .producto4 {
+  margin-bottom: 20px;        /* Espacio debajo de cada producto */
+  background: #f3f3f3;         /* Fondo gris claro para destacar el contenido */
+  padding: 15px;               /* Espacio interno */
+  border-radius: 8px;          /* Bordes redondeados */
+  text-align: center;          /* Centrado de contenido */
+  display: inline-block;       /* Se muestra en línea, pero como bloque */
+  vertical-align: top;         /* Alineación vertical superior */
+  width: 45%;                  /* Ancho del producto (dos por fila) */
+  margin: 2%;                  /* Margen alrededor para separación */
+  box-sizing: border-box;      /* Incluye el padding y border en el cálculo del ancho */
+}
+
+/* Estilo para imágenes dentro de productos */
+.producto1 img{
+  width: 100%;                 /* Ocupa todo el ancho disponible */
+  max-width: 300px;            /* Máximo ancho permitido */
+  height: 200px;               /* Altura fija */
+  border-radius: 6px;          /* Bordes redondeados */
+  margin-bottom: 10px;         /* Espacio inferior */
+  display: block;              /* Hace que se comporte como un bloque */
+  margin-left: auto;           /* Centra horizontalmente */
+  margin-right: auto;
+  } 
+.producto2 img{
+  width: 100%;                 /* Ocupa todo el ancho disponible */
+  max-width: 300px;            /* Máximo ancho permitido */
+  height: 200px;               /* Altura fija */
+  border-radius: 6px;          /* Bordes redondeados */
+  margin-bottom: 10px;         /* Espacio inferior */
+  display: block;              /* Hace que se comporte como un bloque */
+  margin-left: auto;           /* Centra horizontalmente */
+  margin-right: auto;
+  } 
+  .producto3 img{
+  width: 100%;                 /* Ocupa todo el ancho disponible */
+  max-width: 300px;            /* Máximo ancho permitido */
+  height: 200px;               /* Altura fija */
+  border-radius: 6px;          /* Bordes redondeados */
+  margin-bottom: 10px;         /* Espacio inferior */
+  display: block;              /* Hace que se comporte como un bloque */
+  margin-left: auto;           /* Centra horizontalmente */
+  margin-right: auto;
+  } 
+.producto4 img {
+  width: 100%;                 /* Ocupa todo el ancho disponible */
+  max-width: 300px;            /* Máximo ancho permitido */
+  height: 200px;               /* Altura fija */
+  border-radius: 6px;          /* Bordes redondeados */
+  margin-bottom: 10px;         /* Espacio inferior */
+  display: block;              /* Hace que se comporte como un bloque */
+  margin-left: auto;           /* Centra horizontalmente */
+  margin-right: auto;
+  }
+
+/* ---------- CONTENEDOR DE PRODUCTOS ---------- */
+
+.contenedor-productos {
+  display: inline-block;       /* Permite que los productos se alineen en línea */
+}
+
+/* ---------- DISEÑO RESPONSIVE PARA PANTALLAS GRANDES (desde 768px en adelante) ---------- */
+
+@media (min-width: 768px) {
+  section {
+    max-width: 1000px;     /* Limita el ancho máximo de la sección */
+    margin: auto;          /* Centra la sección horizontalmente */
+  }
+
+  /* Reafirma las propiedades de los productos en pantallas grandes */
+  .producto1{
+    display: inline-block;
+    width: 45%;
+    margin: 2%;
+    vertical-align: top;
+
+  } 
+  .producto2{
+    display: inline-block;
+    width: 45%;
+    margin: 2%;
+    vertical-align: top;
+  } 
+  .producto3{
+    display: inline-block;
+    width: 45%;
+    margin: 2%;
+    vertical-align: top;
+
+  } .producto4 {
+    display: inline-block;
+    width: 45%;
+    margin: 2%;
+    vertical-align: top;
+  }
+
+  /* Asegura que las imágenes usen el ancho completo de su contenedor */
+  .producto1 img{
+    width: 100%;
+  }
+  .producto2 img{
+    width: 100%;
+  }
+  .producto3 img{
+    width: 100%;
+  }
+  .producto4 img {
+    width: 100%;
+  }
+}
+
+/* ---------- PIE DE PÁGINA ---------- */
+
+div {
+  background-color: #fddde6; /* Mismo color que el encabezado para consistencia */
+  text-align: center;        /* Centrado del texto */
+  padding: 5px;             /* Espacio interno */
+  font-size: 15px;           /* Tamaño de letra más pequeño */
+  
+}
+
+/* ---------- PÁRRAFOS ---------- */
+
+p {
+  font-weight: bold;         /* Texto en negrita */
+}
+
+/* ---------- DISEÑO RESPONSIVE PARA CELULARES (hasta 480px) ---------- */
+
+@media (max-width: 480px) {
+  .producto1{
+    width: 90%;              /* Más ancho para ocupar mejor la pantalla */
+    max-width: 350px;        /* Límite para evitar que sea muy grande */
+    margin: 10px auto;       /* Centrado automático */
+    text-align: center;
+
+  } .producto2{
+    width: 90%;              /* Más ancho para ocupar mejor la pantalla */
+    max-width: 350px;        /* Límite para evitar que sea muy grande */
+    margin: 10px auto;       /* Centrado automático */
+    text-align: center;
+
+  } .producto3{
+    width: 90%;              /* Más ancho para ocupar mejor la pantalla */
+    max-width: 350px;        /* Límite para evitar que sea muy grande */
+    margin: 10px auto;       /* Centrado automático */
+    text-align: center;
+
+  } .producto4 {
+    width: 90%;              /* Más ancho para ocupar mejor la pantalla */
+    max-width: 350px;        /* Límite para evitar que sea muy grande */
+    margin: 10px auto;       /* Centrado automático */
+    text-align: center;
+  }
+
+  /* Tamaño de fuente más pequeño para párrafos */
+  .producto1 p{
+    font-size: 0.9rem;
+  }
+  .producto2 p{
+    font-size: 0.9rem;
+  }
+  .producto3 p{
+    font-size: 0.9rem;
+  }
+  .producto4 p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* Agrega íconos antes y después del título h2 */
+h2::before,
+h2::after {
+  content: "🕸️";             /* Icono decorativo */
+  color: #f48fb1;             /* Color rosado */
+  margin: 0 10px;             /* Espaciado lateral */
+  font-size: 1.2em;           /* Tamaño del icono */
+}
+
+/* Línea decorativa debajo del encabezado */
+header::after {
+  content: "";                
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #f48fb1;        /* Línea rosada */
+  margin: 10px auto 0;
+  border-radius: 2px;         /* Bordes redondeados */
+}
+
+/* Cambia el color del título h3 al pasar el mouse */
+h3:hover {
+  color: #d81b60;             /* Cambia a un rosado más oscuro */
+  cursor: pointer;           /* Muestra que es interactivo */
+}
+
+/*cambia el color del titulo h2 al pasar el mouse*/
+h2:hover{
+  color:#d81b60;
+  cursor: pointer;
+}
+
+
+a:hover{
+  color: #d81b60;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f48fb1;
+  color: #ffffff;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+}
+
+
+p:hover{
+  color: #d81b60;
+}
+
+h1:hover{
+  color: #d81b60;
+}
+
+h1{
+  font-size: 50px;
+}
+
+
+.contenedor-productos img {
+  width: 250px; 
+  transition: transform 0.3s ease; 
+  border-radius: 8px;
+}
+
+.contenedor-productos img:hover {
+  transform: scale(1.1); 
+}
